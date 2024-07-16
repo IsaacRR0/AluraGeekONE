@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Rick y Morty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="imagenes/rickymorty.png" alt="Logo AluraGeek"></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#cart">Carrito (<span id="cartCount">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="about-content">
+            <img src="imagenes/openrickymorty.png" alt="Imagen de Rick y Morty" class="profile-image">
+            <div class="about-text">
+                <h1>Bienvenido a Alura Geek</h1>
+                <p><strong>Tu destino definitivo para todo lo relacionado con Rick y Morty.</strong></p>
+                <p>Explora un multiverso de productos increíbles que fusionan la locura de las aventuras de Rick y Morty con artículos únicos que capturan la esencia de tus personajes favoritos. Desde juegos de cartas hasta coleccionables, en Alura Geek ofrecemos una selección diseñada para los verdaderos fans.</p>
+                <h2>Descubre nuestra colección:</h2>
+                <ol>
+                    <li><strong>Juegos de Cartas:</strong> Expande tus aventuras con juegos autojugables que te permiten controlar personajes y cerrar dimensiones. ¡Conviértete en el más poderoso del multiverso!</li>
+                    <li><strong>Figuras y Coleccionables:</strong> Trae a tus personajes favoritos a casa con figuras y coleccionables que resaltan la locura de la serie.</li>
+                    <li><strong>Compra con Confianza:</strong> En Alura Geek, te ofrecemos una experiencia de compra sin complicaciones y productos de alta calidad que cualquier fanático adorará.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h1>Productos</h1>
+        <div id="product-list" class="product-list">
+            <!-- Los productos se cargarán aquí -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h1>Carrito</h1>
+        <form id="cartForm">
+            <input type="text" id="producto" name="producto" placeholder="Carta a comprar">
+            <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad">
+            <button type="submit">Agregar al carrito</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Realizado por Isaac Rojo Ramírez, actualización en 2024.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
